@@ -1,0 +1,240 @@
+
+<html>
+	<head>
+		<title>Eric Whitmer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_jo7Vnefa0f3gG7YySVRYv");
+})();
+</script>
+<script type="text/javascript">
+		window.onload = function() {
+			const form = document.getElementById('contact-form');
+				form.addEventListener('submit', function (event) {
+				event.preventDefault();
+						const name = document.getElementById('name').value;
+						const email = document.getElementById('email').value;
+						const message = document.getElementById('message').value;
+
+						if (!name.length || !email.length || !message.length) {
+							return;
+						}
+
+						const emailVariables = {
+							name,
+							email,
+							message,
+
+						};
+
+						emailjs.send('gmail', 'template', emailVariables, "user_jo7Vnefa0f3gG7YySVRYv")
+								.then(function() {
+										console.log('SUCCESS!');
+										document.getElementById('name').value = '';
+					document.getElementById('email').value = '';
+					document.getElementById('message').value = '';
+					const successMessage = document.createElement('h3');
+							const successMessageText = document.createTextNode('Your message is on its way! I will be in touch soon!');
+							successMessage.appendChild(successMessageText);
+							document.getElementById('contact-form-container').appendChild(successMessage);
+							document.getElementById('contact-form').hidden = true;
+
+								}, function(error) {
+										console.log('FAILED...', error);
+								});
+				});
+		}
+</script>
+		<style type="text/css">
+
+
+ 				.tab { margin-left: 40px; }
+				#bg{
+					z-index: -1;
+				}
+				#wrapper {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+	</style>
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span><img src="images/logo.svg" class="center" ></span>
+
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Eric Whitmer</h1>
+								<p>Percussionist, Arts Administrator,
+									Photographer</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#bio">Bio</a></li>
+								<li><a href="#music">Music</a></li>
+								<li><a href="#photos">Photos</a></li>
+								<li><a href="#contact">Contact</a></li>
+
+
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="bio">
+								<h2 class="major">Bio</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="eric whitmer" oncontextmenu="return false;" /></span>
+								<p>Currently Studying at the <a href="https://blair.vanderbilt.edu/" target="_blank">
+									Blair School of Music</a> at Vanderbilt University, Eric Whitmer
+									 is a percussionist, arts administrator, photographer, and web designer.
+									 A native of Redding, California, Eric began his music education
+									 through the Orff Approach to music education at
+									  <a href="http://rsarts.org/" target="_blank">Redding School
+											of the Arts</a>.
+								<p>As a percussionist, Eric has played wwith ensembles such as
+									the North State Symphony, the Shasta Symphony Orchestra, and
+									the Vanderbilt Orchestra. He has played chamber music in
+									performances with the
+									 North State Symphony, the
+									 Redding
+											 Performing Arts Society, and the Vanderbilt Percussion Group.
+								He has given concerto performances with both the
+								<a href="https://www.youtube.com/watch?v=_7zFBGQE2S8"
+								target="_blank">North State Symphony</a>, and the
+								 <a href="https://www.youtube.com/watch?v=_ndVO7gdX_I"
+								 target="_blank">Shasta Symphony Orchestra</a>.</p>
+
+								 <p>At Vanderbilt University, Eric is a Deans Honor Scholar, and
+									 a Littlejohn Research Fellow where
+								 he is pursing a Bachelor of Music in Percussion Performance with a
+							   business minor. He studies with <a href="https://blair.vanderbilt.edu/bio/jihye-jung" target="_blank">Prof. JiHye Jung</a>
+								  and <a href="https://www.leevinson.com/bio" target="_blank">Prof. Lee Vinson</a>.
+						     Past instructors include <a href="https://sfcm.edu/faculty/jacob-nissly" target="_blank">
+									 Jacob Nissly</a> and <a href="https://www.georgefox.edu/academics/undergrad/departments/fine_arts/music/faculty/corbin.html" target="_blank">
+										 Dr. Dwayne Corbin.</a> He has also studied arts adminsitration extensively with <a href="https://blair.vanderbilt.edu/bio/mitchell-korn" target="_blank">Prof. Mitchell Korn</a>.
+								 </p>
+
+								 <p>Working in arts administration, Eric has held a variety of positions both
+									 locally in Northern California and across the United States. He has held positions
+									 with the <a href="http://www.pasredding.org/" target="_blank">Redding Performing Arts Society</a>, the <a href="https://northstatesymphony.org" target="_blank">North State Symphony</a>, and <a href="https://scmarimba.org" target="_blank">Southern California Marimba</a>.
+										He has also written and implement a grant program through the Shasta Regional Community Foundation, that allowed him and a colleage to tour Northern California
+										on a joint educational engagement and concert tour.</p>
+									 <p>Eric currently serves as a member of the Board of Directors where he made history as the
+									 	youngest board member in the history of the organization. He is also the Associate
+									Director for Southern California Marimba. At SCM, Eric has helped to launch their
+									<a href="https://scmarimba.org/education/" target="_blank">"Database of Marimba Music by BIPOC Composers"</a> and is currently helping to produce their <a href="https://scmarimba.org/competition/" target="_blank">2021 International Artist Competition</a>.
+									Eric is also the Co-Orchestra Manager for the Vanderbilt Orchestra working with <a href="https://blair.vanderbilt.edu/bio/robin-fountain" target="_blank">Prof. Robin Fountain</a> to help organize logistics and operations of the ensemble.
+								 </p>
+									 </thead>
+							</article>
+
+						<!-- Work -->
+							<article id="music">
+								<h2 class="major">Music</h2>
+								<h2>Chamber</h2>
+								<h3>"Music For Five Musicians" By Marc Mellits</h3>
+								<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Op1ZTZh9Q04?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<br>
+								<br>
+
+								<h3>"Labyrinth of Light" By Nathan Daugherty</h3>
+								<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Ind4fC-0xVA?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<br>
+								<br>
+
+								<h3>"Patter" By Robert Honstein</h3>
+								<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/m_bp0lqHmAo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<br>
+								<br>
+								<br>
+
+								<h2>Solo</h2>
+								<h3>"Torse III" By Akira Miyoshi</h3>
+								<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/X9ZonHQM82I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<br>
+								<br>
+								<h3>"Welcome" By Nick Heilborn</h3>
+								<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/xriqMTcWtZc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</article>
+
+						<!-- Photos -->
+							<article id="photos">
+								<h2 class="photos">Photography</h2>
+
+
+
+
+							</article>
+
+						<!-- Contact -->
+
+							<article id="contact">
+										<div class="contact" id="contact-form-container">
+								<h2 class="major">Contact</h2>
+								<form id="contact-form">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" required />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4" required></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+
+													</div>
+							</article>
+
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; 2020 Eric Whitmer. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
