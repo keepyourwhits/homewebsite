@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+CALSCALE:GREGORIAN
+PRODID:-//Apple Inc.//macOS 13.2.1//EN
+VERSION:2.0
+X-APPLE-CALENDAR-COLOR:#72915A
+X-WR-CALNAME:Philomel's Song
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+DTSTART:20070311T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZNAME:CDT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20071104T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZNAME:CST
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+CREATED:20230303T174200Z
+DESCRIPTION:“philomel’s song” is a through-composed recital curated and
+ performed by Eric Whitmer. Envisioned as an opportunity for healing and
+ collective awareness on the first day of Sexual Assault Awareness Month\
+ , the recital uses the myth of Philomel from Greek/Roman mythology to sp
+ eak to the effects of sexual violence survivorship on survivors' relatio
+ nships and their ability to communicate with others.\n\nFor more informa
+ tion\, please visit: https://www.ericdwhitmer.com/#philomel.
+DTEND;TZID=America/Chicago:20230401T220000
+DTSTAMP:20230303T174535Z
+DTSTART;TZID=America/Chicago:20230401T200000
+LAST-MODIFIED:20230303T174338Z
+LOCATION:Vanderbilt University Blair School of Music\, 2400 Blakemore Av
+ e\, Nashville\, TN 37212\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:philomel's song: hearing sexual violence survivorship
+TRANSP:OPAQUE
+UID:6j5pdml8t70bpbcf2n7fe4qr71@google.com
+END:VEVENT
+END:VCALENDAR
